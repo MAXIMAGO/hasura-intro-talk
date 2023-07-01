@@ -1,4 +1,4 @@
-INSERT INTO rent_a_car.car(make,model,registration_number) VALUES ('Dodge','Caravan','DO M 2012');
+INSERT INTO rent_a_car.car(id,make,model,registration_number) VALUES ('d113c4f5-eaed-4799-8818-8a977a61015a','Dodge','Caravan','DO M 2012');
 INSERT INTO rent_a_car.car(id,make,model,registration_number) VALUES ('a81dbe28-086d-4a6c-91ce-375889cd69b3','GMC','Sonoma','DO M 2813');
 INSERT INTO rent_a_car.car(id,make,model,registration_number) VALUES ('01b0c27e-fa05-472e-9716-3864cec0ce83','Aston Martin','V8 Vantage S','DO M 1489');
 INSERT INTO rent_a_car.car(id,make,model,registration_number) VALUES ('a8ec1f10-c381-437e-afec-60ab2b25825a','Daewoo','Leganza','DO M 2927');
