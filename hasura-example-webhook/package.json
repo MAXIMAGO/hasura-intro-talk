@@ -1,0 +1,17 @@
+{
+  "name": "hasura-example-webhook",
+  "version": "1.0.0",
+  "description": "An example webhook service to showcase Hasura Actions and Events",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "heroku:push": "git push heroku main",
+    "heroku:log": "heroku logs --tail",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MAXIMAGO",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
