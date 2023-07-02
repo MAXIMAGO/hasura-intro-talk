@@ -1,3 +1,5 @@
+# Vor dem Vortrag
+
 ## Start
 
 1. checke das repo aus
@@ -42,3 +44,34 @@ Wenn die Hands-On Session nicht lokal sondern in mit der Cloud Instanz von Hasur
     - Hasura Cloud project (https://cloud.hasura.io/projects)
 - Versichere dich, dass folgende Dinge in Heroku (oder sonst wo in der cloud) deployed sind
     - Die postgres datenbank für das hasura cloud Projekt
+
+
+# Während dem Vortrag
+
+## Beispiel "InsertCar" Action
+
+Erstelle eine Mutation im API Tab:
+
+```
+mutation InsertCar($id: uuid, $make: String, $model: String, $registration_number: String) {
+  insert_rent_a_car_car(objects: {id: $id, make: $make, model: $model, registration_number: $registration_number}) {
+    affected_rows
+    returning {
+      id
+      make
+      model
+      registration_number
+    }
+  }
+}
+```
+
+klicke auf "derive action" und gib dort die folgende URL als Ziel an:
+`https://hasura-intro-talk-example-webhook.onrender.com/insertCar`
+
+## Event "Newsletter for new car"
+
+Erstelle ein Event wie [hier](./event-config-newsletter-on-car-insert.png)
+
+Nutze die folgende URL als Ziel:
+`https://hasura-intro-talk-example-webhook.onrender.com/newsletter`
