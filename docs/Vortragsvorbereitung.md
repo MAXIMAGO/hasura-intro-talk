@@ -3,7 +3,7 @@
 ## Start
 
 1. checke das repo aus
-2. starte die docker container mit docker-compose up
+2. starte die docker container mit `cd docker && docker-compose up`
 
 ## Programme auf dem Rechner öffnen
 

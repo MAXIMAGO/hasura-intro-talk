@@ -28,6 +28,8 @@ services:
       HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
       ## uncomment next line to set an admin secret
       HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
+      ## !!! SECURITY WARNING !!!
+      ## IF YOU COPY THIS SETUP MAKE SURE TO CHANGE THE KEY AND SAVE IT TO AN ENV FILE THAT IS NOT COMMITTED
       HASURA_GRAPHQL_JWT_SECRET: '{"type":"HS256", "key": "3EK6FD+o0+c7tzBNVfjpMkNDi2yARAAKzQlk8O2IKoxQu4nF7EdAh8s3TwpHwrdWT6R"}'
 volumes:
   db_data:
