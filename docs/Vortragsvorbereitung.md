@@ -67,6 +67,11 @@ mutation InsertCar($id: uuid, $make: String, $model: String, $registration_numbe
 }
 ```
 
+Queryvars
+```
+{"id":"133ce0a8-55cc-4f33-a816-1eef7bb63be1","make":"VW","model":"Golf","registration_number":"DO M 1002"}
+```
+
 klicke auf "derive action" und gib dort die folgende URL als Ziel an:
 `https://hasura-intro-talk-example-webhook.onrender.com/insert-car`
 
