@@ -26,6 +26,7 @@
     - !!! Verwende noch nicht den Schema Editor um die Fremdschlüssel in Hasura zu tracken !!! (Das passiert während der Hands-on session)
 - In der Console:
     - Lege im API Tab einen "Authorization" header an mit dem Wert: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvIE92ZXJsYW5kIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMiwiaHR0cHM6Ly9oYXN1cmEuaW8vand0L2NsYWltcyI6eyJ4LWhhc3VyYS1kZWZhdWx0LXJvbGUiOiJ1c2VyIiwieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJ1c2VyIl0sIngtaGFzdXJhLXVzZXItaWQiOiJmN2IzYzJkMS1iMTk0LTRhNWQtYmQ0Ny0wZGU3Y2FjYjc5OGYiLCJ4LWhhc3VyYS1vcmctaWQiOiI0NTYiLCJ4LWhhc3VyYS1jdXN0b20iOiJjdXN0b20tdmFsdWUifX0.Z-oGmngnAgxQesHi4wphiNFCu_OgeEkuGMXljS49GM4"
+    - Der secret key dieses JWT ist genau der key aus dem docker-compose.yml file
     - Hier der link zum jwt: https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvIE92ZXJsYW5kIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMiwiaHR0cHM6Ly9oYXN1cmEuaW8vand0L2NsYWltcyI6eyJ4LWhhc3VyYS1kZWZhdWx0LXJvbGUiOiJ1c2VyIiwieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJ1c2VyIl0sIngtaGFzdXJhLXVzZXItaWQiOiJmN2IzYzJkMS1iMTk0LTRhNWQtYmQ0Ny0wZGU3Y2FjYjc5OGYiLCJ4LWhhc3VyYS1vcmctaWQiOiI0NTYiLCJ4LWhhc3VyYS1jdXN0b20iOiJjdXN0b20tdmFsdWUifX0.Z-oGmngnAgxQesHi4wphiNFCu_OgeEkuGMXljS49GM4
     - Setze eine Permission auf die Person Tabelle
         - Rolle "user"
