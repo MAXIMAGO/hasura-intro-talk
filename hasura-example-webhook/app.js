@@ -39,12 +39,17 @@ const execute = async (variables) => {
 
 // Request Handler
 app.post('/insert-car', async (req, res) => {
+  console.log(`Start Action InsertCar.`);
 
   // get request input
   const { id, make, model, registration_number } = req.body.input;
-
   // run some business logic
-  console.log(`Query traffic office for registration number.`)
+  console.log(`Query traffic office for registration number ${registration_number}.`);
+  if (registration_number.startsWith("BO M"))
+  {
+    console.log(`Registration number is invalid.`);
+    return res.json({affectedRows: 0})
+  }
 
   // execute the Hasura operation
   const { data, errors } = await execute({ id, make, model, registration_number });
@@ -54,6 +59,8 @@ app.post('/insert-car', async (req, res) => {
     return res.status(400).json(errors[0])
   }
 
+  console.log('End Action InsertCar')
+  console.log('===')
   // success
   return res.json({
     ...data.insert_rent_a_car_car
@@ -61,9 +68,11 @@ app.post('/insert-car', async (req, res) => {
 });
 
 app.post('/newsletter', (req, res) => {
-  console.log('Sending Newsletter')
+  console.log('Start Event Newsletter')
   const newCar = req.body.event.data.new
   console.log(`${newCar.make} ${newCar.model} is new in stock. Try it out!`)
+  console.log('End Event Newsletter')
+  console.log('===')
   res.status(200).send({email: true})
 })
 
