@@ -1,19 +1,28 @@
 # Vor dem Vortrag
 
-## Start
+## Lokales Deployment
 
 1. checke das repo aus
 2. starte die docker container mit `cd docker && docker-compose up`
+3. öffne Hasura console (http://localhost:8080/console
+
+## Cloud Deployment
+
+Wenn die Hands-On Session nicht lokal sondern in mit der Cloud Instanz von Hasura passieren soll, dann
+- Öffne im Browser
+    - Console des Hasura Cloud project (https://cloud.hasura.io/projects) statt lokale console 
+- Versichere dich, dass folgende Dinge in Heroku (oder sonst wo in der cloud) deployed sind
+    - Die postgres datenbank für das hasura cloud Projekt
 
 ## Programme auf dem Rechner öffnen
 
 - Öffne auf deinem Desktop bzw. im Browser
-
-    - Hasura console (http://localhost:8080/console)
     - pgAdmin
     - jwt.io
-    - vscode
-        - hasura-example-webhook/app.js 
+    - github.com/MAXIMAGO
+        - hasura-example-webhook/app.js
+    - render.com
+        - logs des hasura-webhook-example services
 
 ## Hasura Console einrichten
 
@@ -38,15 +47,6 @@
 - Versichere dich, dass folgende Dinge in Heroku (oder sonst wo in der cloud) deployed sind:
     - nodejs hasura-example-webhook
 
-## Cloud statt lokal?
-
-Wenn die Hands-On Session nicht lokal sondern in mit der Cloud Instanz von Hasura passieren soll, dann
-- Öffne im Browser
-    - Hasura Cloud project (https://cloud.hasura.io/projects)
-- Versichere dich, dass folgende Dinge in Heroku (oder sonst wo in der cloud) deployed sind
-    - Die postgres datenbank für das hasura cloud Projekt
-
-
 # Während dem Vortrag
 
 ## Beispiel "InsertCar" Action
@@ -68,7 +68,7 @@ mutation InsertCar($id: uuid, $make: String, $model: String, $registration_numbe
 ```
 
 klicke auf "derive action" und gib dort die folgende URL als Ziel an:
-`https://hasura-intro-talk-example-webhook.onrender.com/insertCar`
+`https://hasura-intro-talk-example-webhook.onrender.com/insert-car`
 
 ## Event "Newsletter for new car"
 
