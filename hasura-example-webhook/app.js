@@ -31,7 +31,7 @@ const execute = async (variables) => {
         variables
       }),
       headers: {
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvIE92ZXJsYW5kIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMiwiaHR0cHM6Ly9oYXN1cmEuaW8vand0L2NsYWltcyI6eyJ4LWhhc3VyYS1kZWZhdWx0LXJvbGUiOiJ1c2VyIiwieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJ1c2VyIl0sIngtaGFzdXJhLXVzZXItaWQiOiJmN2IzYzJkMS1iMTk0LTRhNWQtYmQ0Ny0wZGU3Y2FjYjc5OGYiLCJ4LWhhc3VyYS1vcmctaWQiOiI0NTYiLCJ4LWhhc3VyYS1jdXN0b20iOiJjdXN0b20tdmFsdWUifX0",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvIE92ZXJsYW5kIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMiwiaHR0cHM6Ly9oYXN1cmEuaW8vand0L2NsYWltcyI6eyJ4LWhhc3VyYS1kZWZhdWx0LXJvbGUiOiJhZG1pbiIsIngtaGFzdXJhLWFsbG93ZWQtcm9sZXMiOlsiYWRtaW4iLCJ1c2VyIl0sIngtaGFzdXJhLXVzZXItaWQiOiJmN2IzYzJkMS1iMTk0LTRhNWQtYmQ0Ny0wZGU3Y2FjYjc5OGYifX0.krSS1UPgJNYekkx6qP5E_5ZIjSANcEpkO9p5CsHhYzU",
         "Content-Type": "application/json"
       }
     }
